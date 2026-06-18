@@ -1,0 +1,7 @@
+mkdir semana2
+cd semana2
+touch preguntas-semana2.txt comandos-terminal.txt reflexion-semana2.txt
+cd ..
+git add .
+git commit -m "Actividad semana 2"
+git push
