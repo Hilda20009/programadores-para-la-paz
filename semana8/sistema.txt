@@ -1,0 +1,12 @@
+Información del sistema:
+
+1. Comando: uname -a
+   Muestra información completa del sistema operativo, incluyendo el nombre del kernel, la versión, la arquitectura y la fecha de compilación.
+   Es útil para saber qué sistema operativo y versión está ejecutando el servidor, lo que ayuda a diagnosticar problemas de compatibilidad y a planificar actualizaciones.
+
+2. Comando: whoami
+   Muestra el nombre del usuario actual que está ejecutando el comando en la terminal.
+   Es útil para saber con qué permisos se están ejecutando los comandos y qué archivos se pueden modificar o acceder.
+
+Por qué es útil conocer esta información al administrar un servidor:
+Conocer el sistema operativo y la versión del kernel permite asegurarse de que el software instalado sea compatible y esté actualizado. Saber qué usuario ejecuta los procesos ayuda a gestionar permisos y a mantener la seguridad, evitando que procesos críticos se ejecuten con privilegios innecesarios.
