@@ -1,0 +1,45 @@
+Prueba de la API de reportes:
+
+1. Envío un reporte con POST a /reportes usando Thunder Client:
+   JSON enviado:
+   {
+     "tipo": "Infraestructura",
+     "descripcion": "Daño en alumbrado público"
+   }
+   Respuesta del servidor:
+   {
+     "mensaje": "Reporte registrado",
+     "reporte": {
+       "id": 1,
+       "tipo": "Infraestructura",
+       "descripcion": "Daño en alumbrado público"
+     }
+   }
+
+2. Luego consulto los reportes con GET a /reportes:
+   Respuesta del servidor:
+   [
+     {
+       "id": 1,
+       "tipo": "Infraestructura",
+       "descripcion": "Daño en alumbrado público"
+     }
+   ]
+
+3. Envío un segundo reporte:
+   JSON enviado:
+   {
+     "tipo": "Ambiente",
+     "descripcion": "Acumulación de residuos en una zona comunitaria"
+   }
+   Respuesta:
+   {
+     "mensaje": "Reporte registrado",
+     "reporte": {
+       "id": 2,
+       "tipo": "Ambiente",
+       "descripcion": "Acumulación de residuos en una zona comunitaria"
+     }
+   }
+
+4. Consulto nuevamente con GET y ahora aparecen ambos reportes.

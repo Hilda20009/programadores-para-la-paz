@@ -1,0 +1,23 @@
+Ejemplo 1 - Reporte de infraestructura:
+{
+  "tipo": "Infraestructura",
+  "descripcion": "Daño en alumbrado público en la carrera 5 con calle 10"
+}
+
+Ejemplo 2 - Reporte ambiental:
+{
+  "tipo": "Ambiente",
+  "descripcion": "Acumulación de residuos en el parque central"
+}
+
+Ejemplo 3 - Reporte de seguridad:
+{
+  "tipo": "Seguridad",
+  "descripcion": "Falta de iluminación en el sendero peatonal"
+}
+
+Ejemplo 4 - Reporte de movilidad:
+{
+  "tipo": "Movilidad",
+  "descripcion": "Bache en la avenida principal frente al supermercado"
+}
