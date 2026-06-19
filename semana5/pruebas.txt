@@ -1,0 +1,17 @@
+Pruebas de rutas:
+
+1. Ruta GET /
+   - URL: http://localhost:3000
+   - Resultado: Muestra el mensaje "Servidor activo".
+   - Explicación: Es la ruta principal, confirma que el servidor está funcionando.
+
+2. Ruta GET /saludo
+   - URL: http://localhost:3000/saludo
+   - Resultado: Muestra el mensaje "Hola comunidad".
+   - Explicación: Es una ruta específica que devuelve un saludo general.
+
+3. Ruta GET /mensaje/:nombre
+   - URL: http://localhost:3000/mensaje/juan
+   - Resultado: Muestra "Hola juan" (o el nombre que se ponga en la URL).
+   - Explicación: Es una ruta dinámica que recibe un parámetro (nombre) y lo usa para personalizar la respuesta.
+   

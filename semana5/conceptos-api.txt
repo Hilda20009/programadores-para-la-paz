@@ -1,0 +1,21 @@
+Explicación de la ruta POST /reporte:
+
+La ruta POST /reporte recibe datos enviados por el usuario a través del cuerpo de la solicitud (body). Cuando alguien envía un mensaje, el servidor lo recibe y responde con un objeto JSON que confirma la recepción.
+
+Código:
+app.post('/reporte', (req, res) => {
+  const mensaje = req.body.mensaje;
+  res.json({
+    estado: "Reporte recibido",
+    mensaje: mensaje
+  });
+});
+
+Utilidad en una aplicación comunitaria:
+Esta ruta podría servir para que los ciudadanos envíen reportes sobre problemas en su comunidad, como:
+- Baches en las calles.
+- Alumbrado público dañado.
+- Basura acumulada.
+- Situaciones de emergencia.
+
+Al usar POST, la información se envía de forma estructurada, permitiendo que una base de datos o sistema de alertas la procese y la organice. Esto facilita que las autoridades o los líderes comunitarios reciban y atiendan los reportes de manera eficiente.
