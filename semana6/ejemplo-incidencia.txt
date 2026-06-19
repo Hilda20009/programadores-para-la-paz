@@ -1,0 +1,15 @@
+Ejemplo de JSON que podría enviar un ciudadano para reportar una incidencia:
+
+{
+  "tipo": "Iluminación pública",
+  "descripcion": "La comunidad reporta que una lámpara del parque no funciona desde hace varios días."
+}
+
+Otro ejemplo:
+
+{
+  "tipo": "Bache en la vía",
+  "descripcion": "En la calle 10 con carrera 5 hay un bache grande que ha causado daños en varios vehículos."
+}
+
+Este tipo de estructura permite que los reportes lleguen organizados y puedan ser clasificados automáticamente por el sistema para una atención más rápida.
