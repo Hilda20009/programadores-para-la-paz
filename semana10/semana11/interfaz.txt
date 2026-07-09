@@ -1,0 +1,36 @@
+== DESCRIPCIÓN DE LA INTERFAZ BÁSICA ==
+
+La interfaz de la plataforma comunitaria debe ser clara, sencilla, accesible y amigable para todos los ciudadanos, independientemente de su nivel de experiencia tecnológica. Se compondría de las siguientes secciones principales:
+
+1. Cabecera o barra de navegación:
+   - Logotipo o nombre de la plataforma.
+   - Botones de "Iniciar sesión" y "Registrarse" (si el usuario no está autenticado).
+   - Nombre del usuario y botón de "Cerrar sesión" (si está autenticado).
+   - Un enlace a "Mis causas" para ver las causas que el usuario ha creado o apoyado.
+
+2. Sección de "Crear una nueva causa" (solo visible para usuarios autenticados):
+   - Un formulario con los campos: Título, Descripción y (opcional) una categoría.
+   - Un botón de "Publicar causa" que envía el formulario.
+   - Mensaje de confirmación después de crear la causa, y redirección a la lista de causas.
+
+3. Lista de causas disponibles (pública, visible para todos):
+   - Muestra todas las causas activas en la comunidad, ordenadas por fecha de creación (más recientes primero).
+   - Cada causa se presenta con su título, descripción resumida (primeros 150 caracteres), fecha de creación, estado y un contador visible de apoyos.
+   - Un botón o enlace "Ver más" para acceder al detalle completo de la causa.
+
+4. Acciones por cada causa (solo para usuarios autenticados):
+   - Un botón de "Apoyar" que, al hacer clic, aumenta el contador de apoyos en 1 y registra el apoyo en la base de datos.
+   - El botón de apoyo debe deshabilitarse si el usuario ya apoyó esa causa (para evitar apoyos duplicados).
+   - El contador de apoyos se actualiza automáticamente después de cada apoyo.
+
+5. Detalle de una causa (vista individual):
+   - Muestra el título, descripción completa, fecha de creación, estado y el número total de apoyos.
+   - Lista de los últimos apoyos recibidos (sin mostrar nombres completos, solo alias o iniciales para proteger la privacidad).
+   - Un botón de "Volver a la lista" para regresar a la vista principal.
+
+6. Perfil de usuario (opcional):
+   - Muestra el nombre de usuario, correo electrónico y fecha de registro.
+   - Permite cambiar la contraseña (con confirmación).
+   - Lista de causas creadas por el usuario y causas que ha apoyado.
+
+La interfaz debe evitar mostrar información privada de los usuarios, como nombres completos, correos electrónicos o números de teléfono. En lugar de eso, se deben usar alias o nombres de usuario para identificar a los participantes. El diseño debe ser responsivo (adaptable a dispositivos móviles) y utilizar colores y tipografía que transmitan confianza y cercanía con la comunidad.

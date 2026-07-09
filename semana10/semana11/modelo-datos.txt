@@ -1,0 +1,30 @@
+== MODELO DE DATOS PARA PLATAFORMA COMUNITARIA ==
+
+Entidad: Causa
+Propósito: Guardar las causas comunitarias que serán visibles en la plataforma para que los ciudadanos puedan conocerlas, apoyarlas y hacer seguimiento.
+Campos principales:
+- id: Identificador único de la causa (número autoincrementable).
+- titulo: Título breve y descriptivo de la causa.
+- descripcion: Explicación detallada de la causa, su impacto y lo que se busca lograr.
+- fecha_creacion: Fecha y hora en que se registró la causa.
+- estado: Estado actual de la causa (activa, en proceso, finalizada, cerrada).
+- creador_id: Identificador del usuario que creó la causa (relación con la entidad Usuario).
+
+Entidad: Apoyo
+Propósito: Registrar los apoyos que recibe cada causa para hacer seguimiento a la participación ciudadana y medir el interés de la comunidad.
+Campos principales:
+- id: Identificador único del apoyo.
+- causa_id: Identificador de la causa a la que se apoya (relación con la entidad Causa).
+- usuario_id: Identificador del usuario que apoya (relación con la entidad Usuario).
+- fecha_apoyo: Fecha y hora en que se registró el apoyo.
+- comentario: Mensaje opcional que el usuario puede dejar al apoyar (máximo 200 caracteres).
+
+Entidad: Usuario
+Propósito: Gestionar el acceso de los usuarios a la plataforma, permitiendo que solo personas registradas puedan crear causas o apoyar, y protegiendo la información de cada participante.
+Campos principales:
+- id: Identificador único del usuario.
+- nombre_usuario: Nombre de usuario único para iniciar sesión.
+- correo: Correo electrónico del usuario (para recuperación de contraseña y notificaciones).
+- contraseña_hash: Contraseña almacenada de forma segura utilizando hash (nunca se guarda en texto plano).
+- fecha_registro: Fecha en que el usuario se registró en la plataforma.
+- rol: Puede ser "ciudadano", "coordinador" o "administrador" para controlar permisos.

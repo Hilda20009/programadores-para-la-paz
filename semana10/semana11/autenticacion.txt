@@ -1,0 +1,15 @@
+== AUTENTICACIÓN Y PROTECCIÓN DE RUTAS ==
+
+El login o autenticación en una aplicación es el proceso mediante el cual un usuario se identifica ante el sistema, generalmente proporcionando un nombre de usuario y una contraseña. Este proceso permite que la aplicación sepa quién es la persona que está interactuando y qué permisos tiene dentro de la plataforma. Sin autenticación, cualquier persona podría acceder a funciones restringidas sin saber si tiene autorización para hacerlo.
+
+Algunas rutas o secciones de la aplicación deben estar protegidas porque contienen información privada, como los datos personales de los usuarios, los reportes internos de la comunidad, las acciones administrativas o la capacidad de modificar o eliminar registros. Por ejemplo, la ruta que permite crear una causa, eliminar un reporte, ver estadísticas detalladas o acceder a información sensible debería estar restringida solo a usuarios autenticados y, en algunos casos, solo a coordinadores o administradores con roles específicos.
+
+Es fundamental que la información sensible no se exponga públicamente. Esto incluye:
+- Contraseñas de los usuarios (siempre deben almacenarse con hash).
+- Números de documentos de identidad (cédulas, pasaportes, etc.).
+- Números de teléfono y correos electrónicos personales.
+- Direcciones de domicilio exactas o ubicaciones específicas.
+- Tokens de autenticación, claves de API o cualquier credencial de acceso.
+- Datos de salud, orientación política, religión u otros datos considerados sensibles por ley.
+
+La autenticación no solo protege a los usuarios, sino que también genera confianza en la comunidad, porque demuestra que la plataforma se toma en serio la privacidad y seguridad de sus participantes. Además, permite mantener trazabilidad sobre quién realiza cada acción, lo que es clave para procesos de veeduría y control social.
