@@ -1,0 +1,20 @@
+== ITERACIÓN 1 (SPRINT 1) ==
+
+¿Qué 2 tareas del backlog harías primero?
+
+1. (Prioridad 1) Implementar el formulario para que los ciudadanos registren incidencias.
+2. (Prioridad 2) Configurar la alerta automática en Telegram para notificar nuevos reportes.
+
+¿Por qué son las más importantes?
+
+Estas dos tareas son las más importantes porque establecen el flujo principal del sistema: la entrada de datos (el reporte del ciudadano) y la notificación inmediata al equipo coordinador. Sin estas funcionalidades, el proyecto no puede comenzar a operar ni a generar valor para la comunidad. Son la base sobre la que se construirán el resto de las funcionalidades, como el seguimiento o los reportes estadísticos. Además, permiten probar el ciclo completo desde que un ciudadano reporta hasta que el equipo se entera.
+
+¿Qué significa para ti que una tarea esté "terminada"?
+
+Mi definición de "terminado" es que la tarea cumple con todos estos criterios:
+
+1. La funcionalidad funciona correctamente en un entorno de prueba (local o de desarrollo) según lo esperado.
+2. Fue probada manualmente por al menos un miembro del equipo diferente al desarrollador, verificando que no tenga errores.
+3. El código fuente está actualizado y registrado en el repositorio de Git con un mensaje de commit claro (git add, git commit, git push).
+4. La funcionalidad está documentada brevemente para que otros miembros del equipo sepan cómo usarla o probarla.
+5. No contiene información sensible ni expone datos personales en los mensajes o registros.

@@ -1,0 +1,16 @@
+== BACKLOG DEL PROYECTO DE VEEDURÍA CIUDADANA ==
+
+Prioridad: 1 (Más Alta)
+Como ciudadano, quiero registrar una incidencia en un formulario sencillo, para dejar evidencia formal de un problema en mi comunidad.
+
+Prioridad: 2
+Como coordinador del equipo, quiero recibir una alerta automática en Telegram cuando se registre un nuevo reporte, para revisarlo y asignarlo rápidamente.
+
+Prioridad: 3
+Como miembro del equipo de veeduría, quiero consultar todos los reportes filtrados por estado (abierto, en proceso, cerrado), para hacer un seguimiento efectivo de cada caso.
+
+Prioridad: 4
+Como ciudadano, quiero recibir una notificación cuando mi reporte haya sido atendido, para saber que mi caso fue resuelto y sentirme escuchado.
+
+Prioridad: 5 (Menos prioritaria)
+Como administrador, quiero generar un reporte mensual en PDF con estadísticas de incidencias, para compartir los resultados con la comunidad y las autoridades.

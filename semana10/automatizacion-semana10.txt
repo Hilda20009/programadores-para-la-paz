@@ -1,0 +1,28 @@
+== AUTOMATIZACIÓN: ALERTA DE NUEVO REPORTE CON N8N Y TELEGRAM ==
+
+1. ¿Qué evento activa el flujo?
+
+El evento que activa el flujo es el registro de un nuevo reporte en la base de datos de la plataforma. Cuando un ciudadano completa el formulario de incidencia y hace clic en "Enviar", el sistema guarda la información en la base de datos. n8n detecta este nuevo registro a través de un webhook o una conexión a la base de datos y dispara automáticamente la automatización.
+
+2. ¿Qué mensaje se enviaría a Telegram?
+
+El mensaje que se enviaría al grupo de coordinación en Telegram sería una alerta genérica y no sensible, como:
+
+"📢 NUEVO REPORTE CIUDADANO REGISTRADO
+ID del caso: #1234
+Fecha y hora: 15/07/2026 14:30
+Estado: Abierto
+Por favor, ingresa al sistema para revisar los detalles completos del caso."
+
+3. ¿Qué información no debería enviarse por seguridad?
+
+Por razones de seguridad y privacidad, el mensaje de Telegram NO DEBE CONTENER:
+- Nombres completos de los ciudadanos.
+- Números de identificación (cédula, pasaporte, etc.).
+- Direcciones de domicilio exactas o ubicaciones específicas.
+- Números de teléfono o correos electrónicos personales.
+- Ningún tipo de clave, token de acceso o contraseña.
+- Información médica, política, religiosa o cualquier dato considerado sensible.
+- Detalles que puedan identificar directamente a una persona.
+
+El objetivo de la automatización es notificar al equipo, no exponer la información privada del reportante. La información detallada del caso debe estar disponible solo dentro del sistema protegido, al que el coordinador accederá con su autenticación.
