@@ -1,0 +1,42 @@
+=== AUTOMATIZACIÓN CON n8n / TELEGRAM ===
+
+============================================================
+EVENTO QUE ACTIVA LA AUTOMATIZACIÓN
+============================================================
+
+Evento: Cuando una causa registrada en la base de datos alcanza o supera el número mínimo de apoyos establecidos (100 apoyos).
+
+============================================================
+FLUJO DE LA AUTOMATIZACIÓN
+============================================================
+
+1. Un ciudadano registra un nuevo apoyo a una causa existente.
+2. El sistema actualiza el contador de apoyos en la base de datos.
+3. El sistema verifica si el número total de apoyos es mayor o igual al mínimo requerido.
+4. Si la condición se cumple:
+   a. El sistema genera automáticamente el documento PDF con la petición formal.
+   b. El sistema envía una notificación vía Telegram al creador de la causa.
+   c. El sistema envía una notificación vía Telegram al administrador de la plataforma.
+5. Si la condición no se cumple, solo se registra el apoyo.
+
+============================================================
+MENSAJE ENVIADO POR TELEGRAM
+============================================================
+
+Mensaje para el creador:
+"¡Felicidades! Tu causa [TÍTULO] ha alcanzado [NÚMERO] apoyos. Se ha generado el PDF de la petición. Puedes descargarlo desde: [ENLACE]"
+
+Mensaje para el administrador:
+"Nueva causa aprobada: [TÍTULO] creada por [NOMBRE]. Total de apoyos: [NÚMERO]. PDF: [ENLACE]"
+
+============================================================
+INFORMACIÓN QUE NO DEBE ENVIARSE POR SEGURIDAD
+============================================================
+
+- Números de cédula de identidad
+- Números de teléfono personal
+- Direcciones de residencia o trabajo
+- Correos electrónicos completos
+- Comentarios sensibles o información confidencial
+- Contraseñas o credenciales de acceso
+- Datos que permitan identificar a menores de edad

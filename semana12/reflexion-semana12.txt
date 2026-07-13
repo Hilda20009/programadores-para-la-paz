@@ -1,0 +1,17 @@
+=== REFLEXIÓN FINAL - APRENDIZAJES DEL CURSO ===
+
+A lo largo de este curso he comprendido que la tecnología, cuando se diseña con un enfoque ético y centrado en las personas, puede convertirse en una herramienta poderosa para fortalecer la participación ciudadana y la organización comunitaria.
+
+Uno de los aprendizajes más significativos ha sido entender que una solución tecnológica no se mide únicamente por su funcionamiento técnico, sino por su capacidad de resolver problemas reales de las comunidades. "Petición en 3 Clics" es un ejemplo claro de cómo simplificar procesos legales complejos y ponerlos al alcance de cualquier ciudadano, eliminando barreras burocráticas que tradicionalmente han limitado el acceso a la justicia y a la exigibilidad democrática.
+
+El curso me enseñó que la participación ciudadana mediada por tecnología debe ser inclusiva, segura y transparente. No basta con crear una plataforma; es fundamental garantizar que sea accesible para personas con diferentes niveles de alfabetización digital, que proteja los datos personales de los usuarios, que minimice la recolección de información sensible y que ofrezca mecanismos claros de rendición de cuentas.
+
+También comprendí la importancia de la automatización y las notificaciones en tiempo real para mantener a las comunidades informadas y comprometidas con las causas que apoyan. Herramientas como n8n y Telegram permiten que los sistemas respondan de manera ágil y eficiente, generando confianza y fomentando la participación activa.
+
+Otro aspecto fundamental fue entender la relación entre el desarrollo técnico (backend, bases de datos, generación de documentos) y el impacto social. Cada línea de código tiene implicaciones éticas y políticas, y los desarrolladores tenemos la responsabilidad de construir soluciones que respeten los derechos humanos y promuevan el bienestar colectivo.
+
+Finalmente, valoro profundamente el enfoque práctico del curso, que nos permitió aplicar los conocimientos en un proyecto concreto. Esta experiencia me ha preparado para enfrentar desafíos reales en el diseño e implementación de soluciones tecnológicas con sentido social, y me ha motivado a seguir profundizando en este campo.
+
+En conclusión, el curso ha sido una oportunidad invaluable para integrar conocimientos técnicos, reflexión ética y compromiso social. Hoy entiendo que la tecnología es un medio, no un fin, y que su verdadero valor radica en cómo puede contribuir a construir sociedades más justas, participativas y democráticas.
+
+Fecha: 12 de julio de 2026

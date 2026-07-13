@@ -1,0 +1,21 @@
+=== FLUJO DEL SISTEMA "PETICIÓN EN 3 CLICS" ===
+
+El sistema "Petición en 3 Clics" funciona de la siguiente manera:
+
+Paso 1: Un ciudadano accede a la plataforma y crea una nueva causa, ingresando título, descripción y categoría de la petición.
+
+Paso 2: La causa queda registrada en la base de datos con un identificador único y la fecha de creación.
+
+Paso 3: Otros ciudadanos pueden visualizar las causas activas y apoyarlas haciendo clic en un botón de "Apoyar", registrando su nombre y correo electrónico (opcional).
+
+Paso 4: El sistema cuenta automáticamente el número total de apoyos recibidos por cada causa y los almacena en la base de datos.
+
+Paso 5: Cuando una causa alcanza un número mínimo de apoyos (ejemplo: 100), el sistema genera automáticamente un documento PDF formal con la petición, los nombres de los apoyantes y la fecha.
+
+Paso 6: El PDF generado puede ser descargado por el creador de la causa para ser presentado ante autoridades o entidades competentes.
+
+Paso 7: El sistema envía una notificación automática (vía Telegram o correo electrónico) al creador de la causa cuando el documento está listo.
+
+Paso 8: La comunidad puede dar seguimiento a la causa y verificar el estado de la petición en cualquier momento.
+
+Este flujo permite que cualquier ciudadano, sin conocimientos técnicos, pueda iniciar un proceso de exigibilidad democrática de manera ágil y organizada.

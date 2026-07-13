@@ -1,0 +1,51 @@
+=== MODELO DE DATOS SIMPLE - PETICIÓN EN 3 CLICS ===
+
+El sistema utiliza las siguientes entidades principales:
+
+============================================================
+ENTIDAD 1: CAUSA
+============================================================
+Representa la petición o iniciativa creada por un ciudadano.
+
+Campos:
+- id (integer, clave primaria): Identificador único de la causa
+- titulo (string): Título descriptivo de la causa
+- descripcion (text): Descripción detallada de la problemática
+- categoria (string): Categoría de la petición
+- creador_nombre (string): Nombre del ciudadano que crea la causa
+- creador_email (string): Correo electrónico del creador (opcional)
+- fecha_creacion (datetime): Fecha y hora de creación
+- estado (string): Estado de la causa (activa, cerrada, aprobada)
+- apoyos_minimos (integer): Número mínimo de apoyos requeridos
+- pdf_generado (boolean): Indica si ya se generó el PDF
+
+Propósito: Almacenar la información principal de cada petición.
+
+============================================================
+ENTIDAD 2: APOYO
+============================================================
+Representa cada apoyo registrado por un ciudadano a una causa.
+
+Campos:
+- id (integer, clave primaria): Identificador único del apoyo
+- causa_id (integer, clave foránea): Identificador de la causa apoyada
+- nombre_apoyante (string): Nombre del ciudadano que apoya
+- email_apoyante (string): Correo electrónico del apoyante (opcional)
+- fecha_apoyo (datetime): Fecha y hora en que se registró el apoyo
+- comentario (text): Comentario opcional del apoyante
+
+Propósito: Registrar los apoyos ciudadanos y permitir el conteo automático.
+
+============================================================
+RELACIÓN ENTRE ENTIDADES
+============================================================
+- Una CAUSA puede tener muchos APOYOS (relación 1:N)
+- Cada APOYO pertenece a una única CAUSA
+- La clave foránea causa_id conecta ambos registros
+
+============================================================
+SEGURIDAD Y PRIVACIDAD
+============================================================
+- Los datos personales se almacenan de manera opcional
+- No se almacenan datos sensibles como cédulas, direcciones o teléfonos
+- Se aplican principios de minimización de datos
